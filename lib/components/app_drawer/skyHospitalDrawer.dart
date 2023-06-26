@@ -552,7 +552,10 @@ class _skyHospitalDrawerState extends State<skyHospitalDrawer>
               child: CircleAvatar(
                 radius: widget.size! > 100 ? 40 : 24,
                 backgroundColor: Palette().textColor,
-                child: ClipOval(child: Image.asset("assets/img/skylogo2.png")),
+                child: Container(
+                    padding: EdgeInsets.all(7),
+                    child: ClipOval(
+                        child: Image.asset("assets/img/skylogo2.png"))),
               ),
             ),
             SizedBox(
