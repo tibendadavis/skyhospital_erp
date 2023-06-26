@@ -157,13 +157,4 @@ class routes {
     "/system/details": (context) =>
         MyHomePage(context: context, page: hospitalDetails()),
   };
-
-  // var route2 = List.generate(skyHospitalDrawer().items!.length, (index) {
-  //   if (skyHospitalDrawer().items![index]["route"] != null &&
-  //       skyHospitalDrawer().items![index]["link"] != null)
-  //     return {
-  //       skyHospitalDrawer().items![index]["route"] as String: (context) =>
-  //           skyHospitalDrawer().items![index]["link"] as Widget
-  //     };
-  // });
 }
