@@ -24,6 +24,8 @@ class bedStatus extends StatefulWidget {
 class _bedStatusState extends State<bedStatus> {
   @override
   Widget build(BuildContext context) {
+    // ignore: unused_local_variable
+    Size size = MediaQuery.of(context).size;
     bool randomBool() {
       Random random = Random();
       return random.nextBool();
@@ -192,8 +194,7 @@ class _bedStatusState extends State<bedStatus> {
                           SizedBox(
                             height: 20,
                           ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
+                          Wrap(
                             children: [
                               bedStatusComp(
                                 bedNo: "MM01",
@@ -243,242 +244,58 @@ class _bedStatusState extends State<bedStatus> {
                                 bedNo: "MM12",
                                 status: randomBool(),
                               ),
-                            ],
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
                               bedStatusComp(
-                                bedNo: "MM13",
+                                bedNo: "MM12",
                                 status: randomBool(),
                               ),
                               bedStatusComp(
-                                bedNo: "MM14",
+                                bedNo: "MM12",
                                 status: randomBool(),
                               ),
                               bedStatusComp(
-                                bedNo: "MM15",
+                                bedNo: "MM12",
                                 status: randomBool(),
                               ),
                               bedStatusComp(
-                                bedNo: "MM16",
+                                bedNo: "MM12",
                                 status: randomBool(),
                               ),
                               bedStatusComp(
-                                bedNo: "MM17",
+                                bedNo: "MM12",
                                 status: randomBool(),
                               ),
                               bedStatusComp(
-                                bedNo: "MM18",
+                                bedNo: "MM12",
                                 status: randomBool(),
                               ),
                               bedStatusComp(
-                                bedNo: "MM19",
+                                bedNo: "MM12",
                                 status: randomBool(),
                               ),
                               bedStatusComp(
-                                bedNo: "MM20",
+                                bedNo: "MM12",
                                 status: randomBool(),
                               ),
                               bedStatusComp(
-                                bedNo: "MM21",
+                                bedNo: "MM12",
+                                status: randomBool(),
+                              ),
+                              bedStatusComp(
+                                bedNo: "MM12",
+                                status: randomBool(),
+                              ),
+                              bedStatusComp(
+                                bedNo: "MM12",
+                                status: randomBool(),
+                              ),
+                              bedStatusComp(
+                                bedNo: "MM12",
                                 status: randomBool(),
                               ),
                             ],
                           ),
                         ],
-                      )
-
-                      // DataTable(
-                      //     dataRowHeight: 55,
-                      //     headingTextStyle:
-                      //         TextStyle(color: Palette().primaryColor),
-                      //     horizontalMargin: 0,
-                      //     columnSpacing: Responsive.isDesktop(context) &&
-                      //             size.width < 1600
-                      //         ? size.width / 60
-                      //         : Responsive.isDesktop(context) && size.width > 1600
-                      //             ? size.width / 55
-                      //             : 25,
-                      //     showCheckboxColumn: true,
-                      //     checkboxHorizontalMargin: 10,
-                      //     showBottomBorder: true,
-                      //     columns: [
-                      //       DataColumn(
-                      //           label: Expanded(
-                      //         child: HeadingText(
-                      //           size: 14,
-                      //           value: "Adm No.",
-                      //           fontWeight: FontWeight.w700,
-                      //         ),
-                      //       )),
-                      //       DataColumn(
-                      //           label: Expanded(
-                      //         child: HeadingText(
-                      //           size: 14,
-                      //           value: "Admission Date",
-                      //           fontWeight: FontWeight.w700,
-                      //         ),
-                      //       )),
-                      //       DataColumn(
-                      //           label: Expanded(
-                      //         child: HeadingText(
-                      //           size: 14,
-                      //           value: "Reg No.",
-                      //           fontWeight: FontWeight.w700,
-                      //         ),
-                      //       )),
-                      //       DataColumn(
-                      //           label: Expanded(
-                      //         child: HeadingText(
-                      //           size: 14,
-                      //           value: "Patient Name",
-                      //           fontWeight: FontWeight.w700,
-                      //         ),
-                      //       )),
-                      //       DataColumn(
-                      //           label: Expanded(
-                      //         child: HeadingText(
-                      //           size: 14,
-                      //           value: "Age / Gender",
-                      //           fontWeight: FontWeight.w700,
-                      //         ),
-                      //       )),
-                      //       DataColumn(
-                      //           label: Expanded(
-                      //         child: HeadingText(
-                      //           size: 14,
-                      //           value: "Floor Name",
-                      //           fontWeight: FontWeight.w700,
-                      //         ),
-                      //       )),
-                      //       DataColumn(
-                      //           label: Expanded(
-                      //         child: HeadingText(
-                      //           size: 14,
-                      //           value: "Ward",
-                      //           fontWeight: FontWeight.w700,
-                      //         ),
-                      //       )),
-                      //       DataColumn(
-                      //           label: Expanded(
-                      //         child: HeadingText(
-                      //           size: 14,
-                      //           value: "Bed No.",
-                      //           fontWeight: FontWeight.w700,
-                      //         ),
-                      //       )),
-                      //       DataColumn(
-                      //           label: Expanded(
-                      //         child: HeadingText(
-                      //           size: 14,
-                      //           value: "Bed Category",
-                      //           fontWeight: FontWeight.w700,
-                      //         ),
-                      //       )),
-                      //       DataColumn(
-                      //           label: Expanded(
-                      //         child: HeadingText(
-                      //           size: 14,
-                      //           value: "Billing Category",
-                      //           fontWeight: FontWeight.w700,
-                      //         ),
-                      //       )),
-                      //       DataColumn(
-                      //           label: Expanded(
-                      //         child: HeadingText(
-                      //           size: 14,
-                      //           value: "Doctor",
-                      //           fontWeight: FontWeight.w700,
-                      //         ),
-                      //       )),
-                      //       DataColumn(
-                      //           label: Expanded(
-                      //         child: HeadingText(
-                      //           size: 14,
-                      //           value: "Mobile",
-                      //           fontWeight: FontWeight.w700,
-                      //         ),
-                      //       )),
-                      //       DataColumn(
-                      //           label: Expanded(
-                      //         child: HeadingText(
-                      //           size: 14,
-                      //           value: "Payment\nMethod",
-                      //           fontWeight: FontWeight.w700,
-                      //         ),
-                      //       )),
-                      //       DataColumn(
-                      //           label: Expanded(
-                      //         child: HeadingText(
-                      //           size: 14,
-                      //           value: "Status",
-                      //           fontWeight: FontWeight.w700,
-                      //         ),
-                      //       )),
-                      //     ],
-                      //     rows: [
-                      //       DataRow(onSelectChanged: (value) {}, cells: [
-                      //         DataCell(HeadingText(
-                      //           size: 13,
-                      //           value: "111",
-                      //         )),
-                      //         DataCell(HeadingText(
-                      //           size: 14,
-                      //           value: "13/07/2022 10:36",
-                      //         )),
-                      //         DataCell(HeadingText(
-                      //           size: 14,
-                      //           value: "234",
-                      //         )),
-                      //         DataCell(HeadingText(
-                      //           size: 14,
-                      //           value: "John Snow",
-                      //         )),
-                      //         DataCell(HeadingText(
-                      //           size: 14,
-                      //           value: "23/M",
-                      //         )),
-                      //         DataCell(HeadingText(
-                      //           size: 14,
-                      //           value: "GROUND FLOOR",
-                      //         )),
-                      //         DataCell(HeadingText(
-                      //           size: 14,
-                      //           value: "Male Ward (Medical)",
-                      //         )),
-                      //         DataCell(HeadingText(
-                      //           size: 14,
-                      //           value: "MS01",
-                      //         )),
-                      //         DataCell(HeadingText(
-                      //           size: 14,
-                      //           value: "HOSPITAL(BASE)",
-                      //         )),
-                      //         DataCell(HeadingText(
-                      //           size: 14,
-                      //           value: "HOSPITAL(BASE)",
-                      //         )),
-                      //         DataCell(HeadingText(
-                      //           size: 14,
-                      //           value: "Jane Doe",
-                      //         )),
-                      //         DataCell(HeadingText(
-                      //           size: 14,
-                      //           value: "1234567890",
-                      //         )),
-                      //         DataCell(HeadingText(
-                      //           size: 14,
-                      //           value: "Private Cash",
-                      //         )),
-                      //         DataCell(HeadingText(
-                      //           size: 14,
-                      //           value: "Admitted",
-                      //         )),
-                      //       ]),
-                      //     ]),
-
-                      ),
+                      )),
                 ),
               ),
             ]),
