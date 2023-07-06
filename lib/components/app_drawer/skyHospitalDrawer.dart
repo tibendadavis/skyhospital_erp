@@ -296,12 +296,6 @@ class _skyHospitalDrawerState extends State<skyHospitalDrawer>
           Icons.attach_money_rounded,
           "/accounts&revenue/inventoryBilling"
         ],
-        // "submenu3": [
-        //   "Bed Status",
-        //   bedStatus(),
-        //   Icons.bed,
-        //    "/accounts&revenue/inventoryBilling"
-        // ],
       },
       {
         "size": widget.size!,
@@ -375,13 +369,13 @@ class _skyHospitalDrawerState extends State<skyHospitalDrawer>
           "Payment Report",
           payments(),
           Icons.auto_graph_rounded,
-          "/reports/payment"
+          "/accounts&revenue/patientBilling"
         ],
         "submenu5": [
           "Pharmacy Report",
           pharmacy(),
           Icons.auto_graph_rounded,
-          "/reports/pharmacy"
+          "/pharmacyManagement"
         ],
         "submenu2": [
           "Stock Report",
