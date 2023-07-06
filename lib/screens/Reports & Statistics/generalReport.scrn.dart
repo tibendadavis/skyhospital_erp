@@ -3,9 +3,9 @@ import 'package:skyhospital_erp/components/heading_text.dart';
 import 'package:skyhospital_erp/components/tile2.comp.dart';
 
 import 'package:skyhospital_erp/controllers/responsive.dart';
-import 'package:skyhospital_erp/screens/Misc/doctorConsultation.scrn.dart';
+import 'package:skyhospital_erp/screens/Consultation/clinicalManagement.scrn.dart';
+import 'package:skyhospital_erp/screens/Laboratory/laboratory.scrn.dart';
 import 'package:skyhospital_erp/screens/OutPatient%20Management/patients.scrn.dart';
-import 'package:skyhospital_erp/screens/Misc/theater.scrn.dart';
 import 'package:skyhospital_erp/theme/design.theme.dart';
 
 class generalReport extends StatefulWidget {
@@ -68,7 +68,7 @@ class _generalReportState extends State<generalReport> {
                                   : Insets().appPadding,
                               right: Insets().appPadding),
                           child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Expanded(
                                 child: HeadingText(
@@ -78,14 +78,6 @@ class _generalReportState extends State<generalReport> {
                                   color: Palette().primaryColor,
                                 ),
                               ),
-                              InkWell(
-                                onTap: () {},
-                                child: Icon(
-                                  Icons.restart_alt_rounded,
-                                  size: 40,
-                                  color: Palette().primaryColor,
-                                ),
-                              )
                             ],
                           ),
                         ),
@@ -197,7 +189,7 @@ class _generalReportState extends State<generalReport> {
                                   : Insets().appPadding,
                               right: Insets().appPadding),
                           child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Expanded(
                                 child: HeadingText(
@@ -207,14 +199,6 @@ class _generalReportState extends State<generalReport> {
                                   color: Palette().primaryColor,
                                 ),
                               ),
-                              InkWell(
-                                onTap: () {},
-                                child: Icon(
-                                  Icons.restart_alt_rounded,
-                                  size: 40,
-                                  color: Palette().primaryColor,
-                                ),
-                              )
                             ],
                           ),
                         ),
@@ -229,7 +213,7 @@ class _generalReportState extends State<generalReport> {
                                 tileHeading: "Total Surgery",
                                 tileData: "999",
                                 linkTitle: "View Full\nReport",
-                                link: theater(),
+                                link: laboratory(),
                               )),
                               Expanded(
                                   child: tile2(
@@ -263,7 +247,7 @@ class _generalReportState extends State<generalReport> {
                                     tileHeading: "Total Surgery",
                                     tileData: "999",
                                     linkTitle: "View Full\nReport",
-                                    link: patients(),
+                                    link: laboratory(),
                                   )),
                               Container(
                                   width: MediaQuery.of(context).size.width,
@@ -321,7 +305,7 @@ class _generalReportState extends State<generalReport> {
                                   : Insets().appPadding,
                               right: Insets().appPadding),
                           child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Expanded(
                                 child: HeadingText(
@@ -331,14 +315,6 @@ class _generalReportState extends State<generalReport> {
                                   color: Palette().primaryColor,
                                 ),
                               ),
-                              InkWell(
-                                onTap: () {},
-                                child: Icon(
-                                  Icons.restart_alt_rounded,
-                                  size: 40,
-                                  color: Palette().primaryColor,
-                                ),
-                              )
                             ],
                           ),
                         ),
@@ -353,7 +329,7 @@ class _generalReportState extends State<generalReport> {
                                 tileHeading: "Total Consultations",
                                 tileData: "99999",
                                 linkTitle: "View Full\nReport",
-                                link: doctorConsultation(),
+                                link: clinicalManagement(),
                               )),
                               Expanded(
                                   child: tile2(
@@ -386,7 +362,7 @@ class _generalReportState extends State<generalReport> {
                                     tileHeading: "Total Consultations",
                                     tileData: "99999",
                                     linkTitle: "View Full\nReport",
-                                    link: doctorConsultation(),
+                                    link: clinicalManagement(),
                                   )),
                               Container(
                                   width: MediaQuery.of(context).size.width,
