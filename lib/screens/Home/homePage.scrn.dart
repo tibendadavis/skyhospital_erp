@@ -823,7 +823,7 @@ class _homePageState extends State<homePage> {
                             Expanded(
                                 child: InkWell(
                               onTap: () {
-                                Navigator.pushNamed(context, "/theater");
+                                Navigator.pushNamed(context, "/laboratory");
                               },
                               child: tile2(
                                 tileHeading: "Total Surgery",
@@ -834,7 +834,7 @@ class _homePageState extends State<homePage> {
                             Expanded(
                                 child: InkWell(
                               onTap: () {
-                                Navigator.pushNamed(context, "/theater");
+                                Navigator.pushNamed(context, "/laboratory");
                               },
                               child: tile2(
                                 tileHeading: "Performed Surgery",
@@ -845,7 +845,7 @@ class _homePageState extends State<homePage> {
                             Expanded(
                               child: InkWell(
                                 onTap: () {
-                                  Navigator.pushNamed(context, "/theater");
+                                  Navigator.pushNamed(context, "/laboratory");
                                 },
                                 child: tile2(
                                     tileHeading: "Pending Surgery",
@@ -859,7 +859,8 @@ class _homePageState extends State<homePage> {
                                   right: Insets().appPadding * 2),
                               child: InkWell(
                                 onTap: () {
-                                  Navigator.pushNamed(context, "/payments");
+                                  Navigator.pushNamed(context,
+                                      "/accounts&revenue/patientBilling");
                                 },
                                 child: tile2(
                                   tileHeading: "Payments (Tzs)",
@@ -877,7 +878,7 @@ class _homePageState extends State<homePage> {
                                 ),
                                 child: InkWell(
                                   onTap: () {
-                                    Navigator.pushNamed(context, "/theater");
+                                    Navigator.pushNamed(context, "/laboratory");
                                   },
                                   child: tile2(
                                     tileHeading: "Total Surgery",
@@ -892,7 +893,7 @@ class _homePageState extends State<homePage> {
                                 ),
                                 child: InkWell(
                                   onTap: () {
-                                    Navigator.pushNamed(context, "/theater");
+                                    Navigator.pushNamed(context, "/laboratory");
                                   },
                                   child: tile2(
                                       tileHeading: "Performed Surgery",
@@ -906,7 +907,7 @@ class _homePageState extends State<homePage> {
                               ),
                               child: InkWell(
                                 onTap: () {
-                                  Navigator.pushNamed(context, "/theater");
+                                  Navigator.pushNamed(context, "/laboratory");
                                 },
                                 child: tile2(
                                     tileHeading: "Pending Surgery",
@@ -922,7 +923,8 @@ class _homePageState extends State<homePage> {
                               ),
                               child: InkWell(
                                 onTap: () {
-                                  Navigator.pushNamed(context, "/payments");
+                                  Navigator.pushNamed(context,
+                                      "/accounts&revenue/patientBilling");
                                 },
                                 child: tile2(
                                   tileHeading: "Payments",
@@ -946,8 +948,7 @@ class _homePageState extends State<homePage> {
                             Expanded(
                                 child: InkWell(
                               onTap: () {
-                                Navigator.pushNamed(
-                                    context, "/doctorConsultation");
+                                Navigator.pushNamed(context, "/consultation");
                               },
                               child: tile2(
                                 tileHeading: "Total Consultations",
@@ -958,8 +959,7 @@ class _homePageState extends State<homePage> {
                             Expanded(
                                 child: InkWell(
                               onTap: () {
-                                Navigator.pushNamed(
-                                    context, "/doctorConsultation");
+                                Navigator.pushNamed(context, "/consultation");
                               },
                               child: tile2(
                                   tileHeading: "Top Performing Doctor",
@@ -969,8 +969,7 @@ class _homePageState extends State<homePage> {
                             Expanded(
                               child: InkWell(
                                 onTap: () {
-                                  Navigator.pushNamed(
-                                      context, "/appointments/Scheduling");
+                                  Navigator.pushNamed(context, "/consultation");
                                 },
                                 child: tile2(
                                     tileHeading: "Appointments",
@@ -1003,7 +1002,7 @@ class _homePageState extends State<homePage> {
                                 child: InkWell(
                                   onTap: () {
                                     Navigator.pushNamed(
-                                        context, "/doctorConsultation");
+                                        context, "/consultation");
                                   },
                                   child: tile2(
                                     tileHeading: "Total Consultations",
@@ -1019,7 +1018,7 @@ class _homePageState extends State<homePage> {
                                 child: InkWell(
                                   onTap: () {
                                     Navigator.pushNamed(
-                                        context, "/doctorConsultation");
+                                        context, "/consultation");
                                   },
                                   child: tile2(
                                       tileHeading: "Top Performing Doctor",
