@@ -18,6 +18,7 @@ class referralreport extends StatefulWidget {
 class _referralreportState extends State<referralreport> {
   @override
   Widget build(BuildContext context) {
+    // ignore: unused_local_variable
     var size = MediaQuery.of(context).size;
     return Container(
       child: Expanded(
@@ -40,7 +41,7 @@ class _referralreportState extends State<referralreport> {
             ),
           ),
           SizedBox(
-            width: Responsive.isDesktop(context) ? size.width / 3.7 : null,
+            width: Responsive.isDesktop(context) ? 360 : null,
             child: Flex(
               direction: Responsive.isDesktop(context)
                   ? Axis.horizontal
@@ -50,7 +51,7 @@ class _referralreportState extends State<referralreport> {
                   Expanded(
                       child: tile2(
                     tileHeading: "Total Referrals",
-                    tileData: "590",
+                    tileData: "77",
                     icon: Icons.output_rounded,
                   )),
                 ],
@@ -62,7 +63,7 @@ class _referralreportState extends State<referralreport> {
                       ),
                       child: tile2(
                         tileHeading: "Total Referrals",
-                        tileData: "590",
+                        tileData: "77",
                         icon: Icons.output_rounded,
                       )),
                 ]
