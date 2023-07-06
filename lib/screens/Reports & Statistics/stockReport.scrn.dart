@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:skyhospital_erp/components/heading_text.dart';
 import 'package:skyhospital_erp/components/tile2.comp.dart';
-
 import 'package:skyhospital_erp/controllers/responsive.dart';
-import 'package:skyhospital_erp/screens/Misc/storeCategory.scrn.dart';
 import 'package:skyhospital_erp/screens/Inventory%20&%20Assets/storeItem.scrn.dart';
-import 'package:skyhospital_erp/screens/Misc/storeType.scrn.dart';
 import 'package:skyhospital_erp/theme/design.theme.dart';
 
 class stockReport extends StatefulWidget {
@@ -68,7 +65,7 @@ class stockReportState extends State<stockReport> {
                                   : Insets().appPadding,
                               right: Insets().appPadding),
                           child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Expanded(
                                 child: HeadingText(
@@ -78,14 +75,6 @@ class stockReportState extends State<stockReport> {
                                   color: Palette().primaryColor,
                                 ),
                               ),
-                              InkWell(
-                                onTap: () {},
-                                child: Icon(
-                                  Icons.restart_alt_rounded,
-                                  size: 40,
-                                  color: Palette().primaryColor,
-                                ),
-                              )
                             ],
                           ),
                         ),
@@ -189,7 +178,7 @@ class stockReportState extends State<stockReport> {
                                   : Insets().appPadding,
                               right: Insets().appPadding),
                           child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Expanded(
                                 child: HeadingText(
@@ -199,14 +188,6 @@ class stockReportState extends State<stockReport> {
                                   color: Palette().primaryColor,
                                 ),
                               ),
-                              InkWell(
-                                onTap: () {},
-                                child: Icon(
-                                  Icons.restart_alt_rounded,
-                                  size: 40,
-                                  color: Palette().primaryColor,
-                                ),
-                              )
                             ],
                           ),
                         ),
@@ -221,7 +202,7 @@ class stockReportState extends State<stockReport> {
                                 tileHeading: "Total Types",
                                 tileData: "99",
                                 linkTitle: "View Full\nReport",
-                                link: storeType(),
+                                link: storeItem(),
                               )),
                               Expanded(
                                   child: tile2(
@@ -256,7 +237,7 @@ class stockReportState extends State<stockReport> {
                                     tileHeading: "Total Types",
                                     tileData: "999",
                                     linkTitle: "View Full\nReport",
-                                    link: storeType(),
+                                    link: storeItem(),
                                   )),
                               Container(
                                   width: MediaQuery.of(context).size.width,
@@ -314,7 +295,7 @@ class stockReportState extends State<stockReport> {
                                   : Insets().appPadding,
                               right: Insets().appPadding),
                           child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Expanded(
                                 child: HeadingText(
@@ -324,14 +305,6 @@ class stockReportState extends State<stockReport> {
                                   color: Palette().primaryColor,
                                 ),
                               ),
-                              InkWell(
-                                onTap: () {},
-                                child: Icon(
-                                  Icons.restart_alt_rounded,
-                                  size: 40,
-                                  color: Palette().primaryColor,
-                                ),
-                              )
                             ],
                           ),
                         ),
@@ -346,7 +319,7 @@ class stockReportState extends State<stockReport> {
                                 tileHeading: "Total Categories",
                                 tileData: "99999",
                                 linkTitle: "View Full\nReport",
-                                link: storeCategory(),
+                                link: storeItem(),
                               )),
                               Expanded(
                                   child: tile2(
@@ -379,7 +352,7 @@ class stockReportState extends State<stockReport> {
                                     tileHeading: "Total Categories",
                                     tileData: "99999",
                                     linkTitle: "View Full\nReport",
-                                    link: storeCategory(),
+                                    link: storeItem(),
                                   )),
                               Container(
                                   width: MediaQuery.of(context).size.width,
